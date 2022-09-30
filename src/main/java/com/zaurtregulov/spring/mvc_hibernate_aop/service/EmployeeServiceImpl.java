@@ -18,4 +18,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     return employeeDAO.getAllEmployees();
   }
 
+  @Transactional
+  public void saveEmployee(Employee employee) {
+    employeeDAO.saveEmployee(employee);
+  }
+
 }
