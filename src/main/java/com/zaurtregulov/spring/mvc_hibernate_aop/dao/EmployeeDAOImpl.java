@@ -16,7 +16,6 @@ public class EmployeeDAOImpl implements EmployeeDAO {
   @Autowired
   private SessionFactory sessionFactory;
 
-  @Transactional //доверяем Spring работу с транзакциями (открытие, закрытие)
   public List<Employee> getAllEmployees() {
 
     //получение сессии
